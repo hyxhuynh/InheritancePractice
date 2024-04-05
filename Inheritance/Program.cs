@@ -6,29 +6,7 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
-
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
-
-
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
-
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
-
+            // BIRD
             Bird bird1 = new Bird()
             {
                 Species = "emperor penguin",
@@ -54,16 +32,13 @@ namespace Inheritance
 
             Bird[] birdArray = new Bird[] { bird1, bird2 };
 
+            // Display to the console
             foreach (Bird bird in birdArray)
             {
                 bird.BirdDisplay();
             }
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+            // REPTILE
             Reptile reptile1 = new Reptile()
             {
                 Species = "cobra",
@@ -90,6 +65,7 @@ namespace Inheritance
 
             Reptile[] reptileArray = new Reptile[] { reptile1, reptile2 };
 
+            // Display to the console
             foreach (Reptile reptile in reptileArray)
             {
                 reptile.ReptileDisplay();
